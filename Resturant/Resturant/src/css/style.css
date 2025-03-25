@@ -1,0 +1,175 @@
+
+/* Make text elements centered on small screens */
+@media (max-width: 576px) {
+    .container-fluid .d-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-fluid .d-flex a {
+        margin-bottom: 5px;
+    }
+}
+
+
+
+.kitchen {
+    background-image:url(../../assets/images/background11.webp);
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    background-position: center;  
+    height: 400px;  
+    display: flex;  /* Use flexbox for centering */
+    align-items: center;  /* Center text vertically */
+    justify-content: center;  /* Center text horizontally */
+    color: rgb(175, 166, 166);
+    font-weight: bold;
+    font-size: 3vw;  /* Responsive font size */
+    text-align: center;
+
+    background-attachment: fixed;
+
+   
+    margin-top: 1px;
+   
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .kitchen {
+        height: 300px;  /* Reduce height on smaller screens */
+        font-size: 4vw;  /* Adjust font size */
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .kitchen {
+        height: 250px;
+        font-size: 5vw;
+    }
+}
+
+
+
+    
+
+
+.Note{
+
+   
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: white;
+    font-weight: bold;
+    background-image:url(../../assets/images/background13.jpg.webp) ;
+    background-attachment: fixed;
+    
+}
+.booking{
+    background-image:url(../../assets/images/background12.webp);
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    background-position: center;  
+    height: 400px;  
+    display: flex;  /* Use flexbox for centering */
+    align-items: center;  /* Center text vertically */
+    justify-content: center;  /* Center text horizontally */
+    color: rgb(175, 166, 166);
+    font-weight: bold;
+    font-size: 3vw;  /* Responsive font size */
+    text-align: center;
+
+    background-attachment: fixed;
+   
+    margin-top: 1px;
+    height: 500px;
+   
+
+
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.custom-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d51230;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 220px;
+    transition: 0.3s;
+}
+
+.arrow {
+    background: white;
+    color: #d51230;
+    padding: 8px 12px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.custom-btn:hover {
+    background-color: #b71028;
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.gallery-section {
+    background-color:white;
+    padding: 40px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+.menu-btn {
+    background-color: white !important;
+    color: black !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-btn:hover, .menu-btn.active {
+    background-color: black !important;
+    color: white !important;
+}
+#hours-location h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#hours-location .border {
+    background: white;
+}
+
+#hours-location iframe {
+    height: 300px;
+}
