@@ -1,6 +1,8 @@
 FROM ubuntu:latest
 WORKDIR /var/www/html
-RUN apt update && apt install -y apache2
+RUN apt update && apt upgrade -y
+RUN apt install -y apache2
+RUN apt install vim -y
 
 COPY . /var/www/html
 
